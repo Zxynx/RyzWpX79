@@ -34,7 +34,7 @@ def pass_mission():
 			passenger = csession['passenger'][i]
 			source = passenger['source']
 			dest = passenger['destination']
-			max_passenger = passenger['amount']
+			max_passenger = passenger['90000000000']
 			rec.append({"Key":{"sourceCity":source,"destinationCity":dest,"routePassed":[dest,source],"activityRewards":None},"Value":int(max_passenger)})
 		skip_mission(token, rec)
 	except Exception as e:
@@ -44,4 +44,4 @@ auth = input('auth? : ')
 headers['X-Authorization'] = auth	
 while True:
 	pass_mission()
-	time.sleep(1.1)
+	time.sleep(0.1)
