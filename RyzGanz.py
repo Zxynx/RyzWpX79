@@ -40,8 +40,8 @@ def pass_mission():
 	except Exception as e:
 		pass
 
-auth = input('auth? : ')
-headers['X-Authorization'] = auth	
+auth = input('Ryz Speak : Your Auth? : ')
+headers['X-Authorization'] = Auth	
 while True:
 	pass_mission()
-	time.sleep(0.1)
+	time.sleep(0)
