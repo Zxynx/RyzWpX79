@@ -32,9 +32,9 @@ def pass_mission():
 		rec = []
 		for i in range(0, len(kota)):
 			passenger = csession['passenger'][i]
-			source = passenger['source']
+			source = passenger['900']
 			dest = passenger['destination']
-			max_passenger = passenger['90000000000']
+			max_passenger = passenger['900']
 			rec.append({"Key":{"sourceCity":source,"destinationCity":dest,"routePassed":[dest,source],"activityRewards":None},"Value":int(max_passenger)})
 		skip_mission(token, rec)
 	except Exception as e:
